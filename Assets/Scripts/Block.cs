@@ -6,6 +6,7 @@ public class Block : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
+            ScoreManager.instance.AddScore(10);
             Destroy(gameObject);
         }
     }
