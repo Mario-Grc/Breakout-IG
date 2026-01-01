@@ -1296,8 +1296,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c36b9d1ffc52beb4f83788d54aee650f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::PaddleController
   speed: 10
+  minx: -9.1
+  maxx: 9.1
   gameOverScreen: {fileID: 2089728131}
 --- !u!50 &1295174335
 Rigidbody2D:
@@ -1812,6 +1814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   speed: 5
+  minVerticalSpeed: 1
   gameOverManager: {fileID: 0}
 --- !u!96 &1414112740
 TrailRenderer:
@@ -1863,7 +1866,7 @@ TrailRenderer:
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Time: 0.2
-  m_PreviewTimeScale: 1
+  m_PreviewTimeScale: 0
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
