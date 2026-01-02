@@ -7,6 +7,7 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rb;
     public GameOverManager gameOverManager;
     private Transform playerTransform;
+    public AudioManager audioManager;
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class Ball : MonoBehaviour
 
         // para asegurarnos de que la pelota no se queda atascada
         if (Mathf.Abs(vel.y) < minVerticalSpeed) {
-            // Forzar un componente vertical m�nimo
+            // Forzar un componente vertical minimo
             vel.y = minVerticalSpeed * Mathf.Sign(vel.y);
             // Si y era 0, forzar hacia abajo
             if (vel.y == 0) vel.y = -minVerticalSpeed;
@@ -34,6 +35,13 @@ public class Ball : MonoBehaviour
         if (playerTransform != null && transform.position.y < (playerTransform.position.y - 1))
         {
             gameOverManager.gameOver();
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Block"))
+        {
+            audioManager.playPop();
         }
     }
 }

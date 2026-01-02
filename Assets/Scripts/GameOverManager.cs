@@ -18,10 +18,12 @@ public class GameOverManager : MonoBehaviour
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
     }
 
     public void gameOver()
     {
         gameOverScreen.SetActive(true);
+        Time.timeScale = 0f;
     }
 }
