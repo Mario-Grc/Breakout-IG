@@ -31,7 +31,7 @@ public class Ball : MonoBehaviour
         // Mantener velocidad constante
         rb.linearVelocity = vel.normalized * speed;
 
-        if (playerTransform != null && transform.position.y < playerTransform.position.y)
+        if (playerTransform != null && transform.position.y < (playerTransform.position.y - 1))
         {
             gameOverManager.gameOver();
         }
