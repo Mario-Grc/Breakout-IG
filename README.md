@@ -6,7 +6,7 @@
 ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 
 ## Descripción
-Este proyecto es una implementación del clásico juego arcade **Breakout** desarrollado en Unity. El objetivo del juego es conseguir destruir todos los bloques que aparecen en pantalla haciendo rebotar una pelota. Si la pelota cae al vacío, el jugador ha perdido y tendrá que volver a intentarlo.
+Este proyecto es una implementación del clásico juego arcade **Breakout** desarrollado en Unity. El objetivo del juego es destruir todos los bloques que aparecen en pantalla haciendo rebotar una pelota. Si la pelota cae al vacío, el jugador ha perdido y tendrá que volver a intentarlo.
 
 ### Características principales
 Algunas de las características principales son:
@@ -21,7 +21,7 @@ Algunas de las características principales son:
 |--------|-------|
 | Mover paleta izquierda | Flecha izquierda o A |
 | Mover paleta derecha | Flecha derecha o D |
-| Pausa | esc |
+| Pausa | ESC |
 
 ## Instalación y ejecución
 Hay dos formas de probar el juego
@@ -40,8 +40,8 @@ Hay dos formas de probar el juego
 [Enlace al vídeo de demostración](Demo-Breaking-Good.mkv)
 
 ## Autores
-- [Alejandro Van Baumberghen Quintana](https://github.com/Alejandrovb01)
+- [Alejandro van Baumberghen Quintana](https://github.com/Alejandrovb01)
 - [Mario García Abellán](https://github.com/Mario-Grc)
 
-## Referencias
-Música
+## Música
+La banda sonora de este juego es una versión _chiptune_ de "So What", la primera pieza del álbum de jazz _Kind of Blue_, de Miles Davis. Esta reinterpretación fue realizada por Chris del Camino (alias "beek") y lanzada en _Kind of Bloop_, un álbum tributo al original.
